@@ -60,7 +60,14 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BasicListAdapter.cs" />
      <Compile Include="Assets\Scripts\DataManager.cs" />
+     <Compile Include="Assets\Scripts\HttpClient\BaseAPI.cs" />
+     <Compile Include="Assets\Scripts\HttpClient\DefaultAPI.cs" />
+     <Compile Include="Assets\Scripts\HttpClient\HttpClient.cs" />
+     <Compile Include="Assets\Scripts\HttpClient\HttpClientBuilder.cs" />
+     <Compile Include="Assets\Scripts\HttpClient\IPlatformAPI.cs" />
+     <Compile Include="Assets\Scripts\HttpClient\Reg.cs" />
      <Compile Include="Assets\Scripts\MainView.cs" />
+     <Compile Include="Assets\Scripts\RankData.cs" />
      <Compile Include="Assets\Scripts\RankItemCtrl.cs" />
      <Compile Include="Assets\Scripts\SimpleJson\SimpleJSON.cs" />
      <Compile Include="Assets\Scripts\SimpleJson\SimpleJSONBinary.cs" />
@@ -72,34 +79,34 @@
      <None Include="Assets\OSA\Resources\OSA\Templates\Scripts\BasicGridAdapter.txt" />
      <None Include="Assets\OSA\Docs\Manual link.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -279,7 +286,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -130,10 +130,10 @@
      <Compile Include="Assets\OSA\Scripts\frame8\ScrollbarFixer8.cs" />
      <None Include="Assets\OSA\Scripts\OSA.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -328,7 +328,7 @@
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/wangjian/Documents/unityFile/RankGame/RankList/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/wangjian/Documents/unityFile/RankGameHttp/RankList/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
