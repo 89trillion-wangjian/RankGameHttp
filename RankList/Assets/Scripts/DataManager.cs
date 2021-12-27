@@ -8,7 +8,7 @@ public class DataManager
    private DataManager() { }
    private static DataManager _Singleton = null;
 
-   public string mySelfId = "3716954261";
+   public string mySelfId = "255862475";
    public static DataManager CreateInstance()
    {
       if (_Singleton == null)

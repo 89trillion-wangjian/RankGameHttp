@@ -75,7 +75,6 @@ namespace Your.Namespace.Here.UniqueStringHereToAvoidNamespaceConflicts.Lists
 			// - enabling the instance game object
 			// - setting its index 
 			// - calling its CollectViews()
-			Debug.Log("创建" + itemIndex);
 			
 			instance.Init(_Params.ItemPrefab, _Params.Content, itemIndex);
 
