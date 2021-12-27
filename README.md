@@ -27,18 +27,4 @@
 | OSA        | osa插件目录              |
 
 ## 4. 流程图
-
-```flow
-st=>start: 开始
-op=>operation: 请求接口数据
-cond=>condition: 请求成功(是或否?)
-sub1=>subroutine: 再次请求
-io=>inputoutput: 输入输出框
-op1=>operation: 根据接口数据创建榜单
-op2=>operation: OSA解析
-op4=>operation: 展示榜单
-e=>end: 结束
-st->op->cond
-cond(yes)->op1->op2->op4->e
-cond(no)->sub1(right)->op
-```
+![](https://github.com/89trillion-wangjian/RankGameHttp/blob/master/sequence.png)
