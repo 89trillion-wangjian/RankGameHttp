@@ -1894,7 +1894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5901d4aff71e4a62b5e5d6dd8346019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toastCtrl: {fileID: 677755035}
+  toastView: {fileID: 677755035}
 --- !u!1 &1262167742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2560,6 +2560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb962e60dc114c049e6c5cd673bf4ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCtrl: {fileID: 1786681482}
   view: {fileID: 1786681481}
 --- !u!1 &1811276284
 GameObject:
