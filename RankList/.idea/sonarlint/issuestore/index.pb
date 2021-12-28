@@ -3,8 +3,6 @@ W
 'Assets/Scripts/SimpleJson/SimpleJSON.cs,9/2/927a8509c4a45aca8250fd24a49b649cd6acd336
 \
 ,Assets/Scripts/SimpleJson/SimpleJSONUnity.cs,3/6/360bbb491c99b1b6c8b558e779232bd00fc8353f
-Q
-!Assets/Scripts/Model/JsonModel.cs,4/c/4c81d0cad446c5518f1d2633ca3436cbb4e72f8a
 W
 'Assets/Scripts/View/BasicListAdapter.cs,7/c/7c35a5a06efc878037b5ffea3919203e21c7e0be
 S

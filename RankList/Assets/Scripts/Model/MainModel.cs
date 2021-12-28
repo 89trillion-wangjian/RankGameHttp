@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using Controller;
-using SimpleJSON;
 using UnityEngine;
 
 namespace Model
