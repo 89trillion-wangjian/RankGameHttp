@@ -27,4 +27,4 @@
 | OSA        | osa插件目录              |
 
 ## 4. 流程图
-![](https://github.com/89trillion-wangjian/RankGameHttp/blob/master/sequence.png)
+![](https://github.com/89trillion-wangjian/RankGameHttp/blob/master/seq.png)
