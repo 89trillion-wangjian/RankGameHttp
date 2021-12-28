@@ -58,22 +58,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BasicListAdapter.cs" />
-     <Compile Include="Assets\Scripts\DataManager.cs" />
+     <Compile Include="Assets\Scripts\Controller\MainController.cs" />
      <Compile Include="Assets\Scripts\HttpClient\BaseAPI.cs" />
      <Compile Include="Assets\Scripts\HttpClient\DefaultAPI.cs" />
      <Compile Include="Assets\Scripts\HttpClient\HttpClient.cs" />
      <Compile Include="Assets\Scripts\HttpClient\HttpClientBuilder.cs" />
      <Compile Include="Assets\Scripts\HttpClient\IPlatformAPI.cs" />
      <Compile Include="Assets\Scripts\HttpClient\Reg.cs" />
-     <Compile Include="Assets\Scripts\MainView.cs" />
-     <Compile Include="Assets\Scripts\RankData.cs" />
-     <Compile Include="Assets\Scripts\RankItemCtrl.cs" />
+     <Compile Include="Assets\Scripts\Model\DataManager.cs" />
+     <Compile Include="Assets\Scripts\Model\JsonModel.cs" />
+     <Compile Include="Assets\Scripts\Model\MainModel.cs" />
+     <Compile Include="Assets\Scripts\Model\RankData.cs" />
      <Compile Include="Assets\Scripts\SimpleJson\SimpleJSON.cs" />
      <Compile Include="Assets\Scripts\SimpleJson\SimpleJSONBinary.cs" />
      <Compile Include="Assets\Scripts\SimpleJson\SimpleJSONDotNetTypes.cs" />
      <Compile Include="Assets\Scripts\SimpleJson\SimpleJSONUnity.cs" />
-     <Compile Include="Assets\Scripts\ToastCtrl.cs" />
+     <Compile Include="Assets\Scripts\View\BasicListAdapter.cs" />
+     <Compile Include="Assets\Scripts\View\MainView.cs" />
+     <Compile Include="Assets\Scripts\View\RankItemCtrl.cs" />
+     <Compile Include="Assets\Scripts\View\ToastView.cs" />
      <None Include="Assets\OSA\Resources\OSA\Templates\ScriptsChunks\HeaderComment.txt" />
      <None Include="Assets\OSA\Resources\OSA\Templates\Scripts\BasicListAdapter.txt" />
      <None Include="Assets\OSA\Resources\OSA\Templates\Scripts\BasicGridAdapter.txt" />
