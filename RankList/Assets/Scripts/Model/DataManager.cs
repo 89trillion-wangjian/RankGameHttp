@@ -11,24 +11,22 @@ namespace Model
         {
         }
 
-        private static DataManager _singleton;
+        private static DataManager singleton;
 
         public string mySelfId = "255862475";
-        
+
         public List<JsonModel> JsonList;
 
         public JSONNode JsonNode { set; get; }
 
         public static DataManager CreateInstance()
         {
-            if (_singleton == null)
+            if (singleton == null)
             {
-                _singleton = new DataManager();
+                singleton = new DataManager();
             }
 
-            return _singleton;
+            return singleton;
         }
-
-
     }
 }

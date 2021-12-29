@@ -14,13 +14,13 @@ namespace Controller
 
         [SerializeField] private MainView mainView;
 
-        private readonly MainModel _mainModel = MainModel.CreateInstance();
+        private readonly MainModel mainModel = MainModel.CreateInstance();
 
-        private int _countDownValue;
+        private int countDownValue = 0;
 
         private void Awake()
         {
-            _mainModel.MainCtrl = mainCtrl;
+            mainModel.MainCtrl = mainCtrl;
         }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Controller
         /// </summary>
         public void ReqRankData()
         {
-            _mainModel.ReqRankData(gameObject);
+            mainModel.ReqRankData(gameObject);
         }
 
         public void ReadJson(string str)
@@ -64,17 +64,17 @@ namespace Controller
                 mainView.ChangeRankStatus(i < 3, json);
             }
 
-            _countDownValue = MainModel.CreateInstance().CountDownValue;
+            countDownValue = MainModel.CreateInstance().CountDownValue;
             StopCoroutine(nameof(StartCutDown));
             StartCoroutine(nameof(StartCutDown));
         }
 
         private IEnumerator StartCutDown()
         {
-            while (_countDownValue > 0)
+            while (countDownValue > 0)
             {
-                _countDownValue--;
-                mainView.UpdateCountDownTxt(_countDownValue);
+                countDownValue--;
+                mainView.UpdateCountDownTxt(countDownValue);
                 yield return new WaitForSeconds(1.0f);
             }
         }

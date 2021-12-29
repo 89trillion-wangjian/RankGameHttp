@@ -3,8 +3,11 @@
     public class JsonModel
     {
         public string id;
+        
         public string nickName;
+        
         public string avatar;
+        
         public string trophy;
 
         public JsonModel(string id, string nickName, string avatar, string trophy)

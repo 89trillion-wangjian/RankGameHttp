@@ -7,24 +7,25 @@ namespace Model
     public class MainModel
     {
         public MainController MainCtrl;
-        private static MainModel _singleton;
+
+        private static MainModel singleton;
+
         public int CountDownValue { get; set; }
-        public List<JsonModel> JsonList;
-        public bool isForceRequest;
+
+        public List<JsonModel> JsonList { get; set; }
+
+        public bool isForceRequest = false;
+
         public static MainModel CreateInstance()
         {
-            if (_singleton == null)
-            {
-                _singleton = new MainModel();
-            }
-
-            return _singleton;
+            return singleton ?? (singleton = new MainModel());
         }
 
 
-        /**
-         * 请求排行榜数据
-         */
+        /// <summary>
+        /// 请求排行榜数据
+        /// </summary>
+        /// <param name="gameObject"></param>
         public void ReqRankData(GameObject gameObject)
         {
             RankData rankData = new RankData(gameObject)
@@ -55,6 +56,5 @@ namespace Model
         {
             Debug.Log("请求失败" + data);
         }
-
     }
 }
