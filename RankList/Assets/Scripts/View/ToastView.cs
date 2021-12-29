@@ -5,8 +5,7 @@ namespace View
 {
     public class ToastView : MonoBehaviour
     {
-        // Start is called before the first frame update
-        [SerializeField] public Text text;
+        [SerializeField] private Text text;
 
         public void ShowText(string txt)
         {
@@ -20,7 +19,5 @@ namespace View
         {
             this.gameObject.SetActive(false);
         }
-
-        // Update is called once per frame
     }
 }

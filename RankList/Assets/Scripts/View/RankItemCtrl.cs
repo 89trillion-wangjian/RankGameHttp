@@ -6,29 +6,28 @@ namespace View
 {
     public class RankItemCtrl : MonoBehaviour
     {
-        public RankItemCtrl rankItemCtrl;
+        [SerializeField] private RankItemCtrl rankItemCtrl;
 
-        // Start is called before the first frame update
+        [SerializeField] private ToastView toastView;
+
         public static RankItemCtrl Singleton;
+
+        private MyListItemModel itemData;
+
 
         public void Awake()
         {
             Singleton = rankItemCtrl;
         }
 
-        private MyListItemModel _itemData;
-        [FormerlySerializedAs("toastCtrl")] public ToastView toastView;
-
-        public void OnBtnClick()
+        public void ShowToast()
         {
-            toastView.ShowText("User: " + _itemData.NickName + "    Rank: " + _itemData.Ranking);
+            toastView.ShowText("User: " + itemData.NickName + "    Rank: " + itemData.Ranking);
         }
 
         public void SetData(MyListItemModel model)
         {
-            this._itemData = model;
+            this.itemData = model;
         }
-
-        // Update is called once per frame
     }
 }
