@@ -123,8 +123,7 @@ namespace View
                     newOrRecycled.RankNumTxt.text = model.Ranking + "";
                 }
             }
-
-            newOrRecycled.GameObject.GetComponent<RankItemCtrl>().SetData(model);
+            RankItemCtrl.Singleton.SetData(model);
         }
 
         #endregion

@@ -1894,6 +1894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5901d4aff71e4a62b5e5d6dd8346019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rankItemCtrl: {fileID: 1255790014}
   toastView: {fileID: 677755035}
 --- !u!1 &1262167742
 GameObject:
