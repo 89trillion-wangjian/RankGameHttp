@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Controller;
 using Model;
 using UnityEngine;
@@ -62,12 +63,40 @@ namespace View
 
         public void UpdateCountDownTxt(int value)
         {
-            this.countDownTxt.text = string.Concat("Ends in:", value, "秒");
+            this.countDownTxt.text = string.Concat("Ends in:", FormatTime(value));
         }
 
         public void HideRank()
         {
             rankPanel.SetActive(false);
+        }
+
+        /// <summary>
+        /// 格式化时间
+        /// </summary>
+        /// <param name="seconds">秒</param>
+        /// <returns></returns>
+        public static string FormatTime(float seconds)
+        {
+            TimeSpan ts = new TimeSpan(0, 0, Convert.ToInt32(seconds));
+            string str = "";
+
+            if (ts.Hours > 0)
+            {
+                str = $"{ts.Hours:00}时{ts.Minutes:00}分{ts.Seconds:00}秒";
+            }
+
+            if (ts.Hours == 0 && ts.Minutes > 0)
+            {
+                str = $"{ts.Minutes:00}分{ts.Seconds:00}秒";
+            }
+
+            if (ts.Hours == 0 && ts.Minutes == 0)
+            {
+                str = $"00:00:{ts.Seconds:00}秒";
+            }
+
+            return str;
         }
     }
 }
