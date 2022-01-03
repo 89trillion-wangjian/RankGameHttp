@@ -4,7 +4,7 @@
 
 ## 2. 项目结构
 
-* scene
+* Scene
   * MainScene
 * Scripts
   * SimpleJson               //解析json文件
