@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace View
@@ -8,17 +7,15 @@ namespace View
     {
         [SerializeField] private Text toastTxt;
 
-        public void ShowText(string txt)
+        public void ShowToast(string txt)
         {
-            this.gameObject.SetActive(true);
-            this.toastTxt.text = txt;
-            CancelInvoke(nameof(HideText));
-            Invoke(nameof(HideText), 2);
+            transform.SetAsLastSibling();
+            toastTxt.text = txt;
         }
 
-        public void HideText()
+        public void HideToast()
         {
-            this.gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

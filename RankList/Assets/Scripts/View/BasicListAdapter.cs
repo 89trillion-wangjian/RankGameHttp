@@ -31,6 +31,8 @@ using System.Collections.Generic;
 using Com.TheFallenGames.OSA.Core;
 using Com.TheFallenGames.OSA.CustomParams;
 using Com.TheFallenGames.OSA.DataHelpers;
+using Controller;
+using Entity;
 using frame8.Logic.Misc.Other.Extensions;
 using Model;
 using UnityEngine;
@@ -58,7 +60,7 @@ namespace View
             base.Awake();
 
             // Retrieve the models from your data source and set the items count
-            int count = MainModel.CreateInstance().JsonList.Count;
+            int count = RankModel.CreateInstance().JsonList.Count;
             RetrieveDataAndUpdate(count);
         }
 
@@ -97,8 +99,7 @@ namespace View
             }
 
             newOrRecycled.LevelImg.sprite =
-                Resources.Load(string.Concat("rank_icon/arenaBadge_", (Convert.ToInt32(model.Trophy) / 1000 + 1)),
-                    typeof(Sprite)) as Sprite;
+                Resources.Load<Sprite>($"rank_icon/arenaBadge_{(Convert.ToInt32(model.Trophy) / 1000 + 1)}");
             if (newOrRecycled.LevelImg.sprite != null)
             {
                 newOrRecycled.LevelImg.rectTransform.sizeDelta = new Vector2(newOrRecycled.LevelImg.sprite.rect.width,
@@ -110,7 +111,7 @@ namespace View
                     newOrRecycled.Rankimg.gameObject.SetActive(true);
                     newOrRecycled.RankNumTxt.gameObject.SetActive(false);
                     newOrRecycled.Rankimg.sprite =
-                        Resources.Load(string.Concat("ranking/rank_", model.Ranking), typeof(Sprite)) as Sprite;
+                        Resources.Load<Sprite>($"ranking/rank_{model.Ranking}");
                     if (newOrRecycled.Rankimg.sprite != null)
                         newOrRecycled.Rankimg.rectTransform.sizeDelta = new Vector2(
                             newOrRecycled.Rankimg.sprite.rect.width,
@@ -123,7 +124,8 @@ namespace View
                     newOrRecycled.RankNumTxt.text = model.Ranking + "";
                 }
             }
-            RankItemCtrl.Singleton.SetData(model);
+
+            newOrRecycled.rankItemController.SetData(model);
         }
 
         #endregion
@@ -167,7 +169,7 @@ namespace View
             // Retrieve your data here
 
 
-            List<JsonModel> json = MainModel.CreateInstance().JsonList;
+            List<JsonModel> json = RankModel.CreateInstance().JsonList;
 
             for (int i = 0; i < count; ++i)
             {
@@ -207,7 +209,10 @@ namespace View
     // Your views holder should extend BaseItemViewsHolder for ListViews and CellViewsHolder for GridViews
     public class MyListItemViewsHolder : BaseItemViewsHolder
     {
-        public GameObject GameObject;
+        public RankItemController rankItemController;
+
+        public GameObject gameObject;
+
         public Image LevelImg;
 
         public Text UserName;
@@ -232,7 +237,8 @@ namespace View
             root.GetComponentAtPath("ranking/rankNumTxt", out RankNumTxt);
             root.GetComponentAtPath("ranking/rankimg", out Rankimg);
             root.GetComponentAtPath("bg", out Bg);
-            GameObject = root.gameObject;
+            rankItemController = root.GetComponent<RankItemController>();
+            gameObject = root.gameObject;
         }
     }
 }

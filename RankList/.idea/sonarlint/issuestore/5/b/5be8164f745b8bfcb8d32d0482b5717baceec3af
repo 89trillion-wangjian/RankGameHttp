@@ -1,8 +1,0 @@
-
-Vcsharpsquid:S3442 "9Change the visibility of this constructor to 'protected'.(ïıÓø
-ocsharpsquid:S101"SRename class 'BaseAPI' to match pascal case naming rules, consider using 'BaseApi'.(ÜÕÙ½
-ocsharpsquid:S3776M"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ó¬›
-Ocsharpsquid:S3903"-Move 'ApiRequestType' into a named namespace.(ÅìàÂûÿÿÿÿ
-Ccsharpsquid:S3903"&Move 'BaseAPI' into a named namespace.(ÜÕÙ½
-@csharpsquid:S125C"Remove this commented out code.(©¼¶Àûÿÿÿÿ
-@csharpsquid:S125S"Remove this commented out code.(©¼¶Àûÿÿÿÿ
