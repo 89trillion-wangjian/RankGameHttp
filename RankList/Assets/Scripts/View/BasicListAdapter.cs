@@ -99,7 +99,7 @@ namespace View
             }
 
             newOrRecycled.LevelImg.sprite =
-                Resources.Load<Sprite>($"rank_icon/arenaBadge_{(Convert.ToInt32(model.Trophy) / 1000 + 1)}");
+                Resources.Load<Sprite>($"RankIcon/arenaBadge_{(Convert.ToInt32(model.Trophy) / 1000 + 1)}");
             if (newOrRecycled.LevelImg.sprite != null)
             {
                 newOrRecycled.LevelImg.rectTransform.sizeDelta = new Vector2(newOrRecycled.LevelImg.sprite.rect.width,
@@ -111,7 +111,7 @@ namespace View
                     newOrRecycled.Rankimg.gameObject.SetActive(true);
                     newOrRecycled.RankNumTxt.gameObject.SetActive(false);
                     newOrRecycled.Rankimg.sprite =
-                        Resources.Load<Sprite>($"ranking/rank_{model.Ranking}");
+                        Resources.Load<Sprite>($"RankLevel/rank_{model.Ranking}");
                     if (newOrRecycled.Rankimg.sprite != null)
                         newOrRecycled.Rankimg.rectTransform.sizeDelta = new Vector2(
                             newOrRecycled.Rankimg.sprite.rect.width,

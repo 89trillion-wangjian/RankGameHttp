@@ -35,7 +35,7 @@ namespace View
             if (isTopThree)
             {
                 rankimg.sprite =
-                    Resources.Load<Sprite>($"ranking/rank_{ranking + 1}");
+                    Resources.Load<Sprite>($"RankLevel/rank_{ranking + 1}");
                 if (rankimg.sprite != null)
                 {
                     rankimg.rectTransform.sizeDelta =
