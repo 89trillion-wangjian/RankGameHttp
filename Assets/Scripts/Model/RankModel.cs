@@ -53,7 +53,7 @@ namespace Model
 
         private void OnRequestError(string data, int code)
         {
-            Debug.Log("请求失败" + data);
+            Debug.Log("请求失败");
         }
     }
 }

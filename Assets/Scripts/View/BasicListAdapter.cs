@@ -121,7 +121,7 @@ namespace View
                 {
                     newOrRecycled.Rankimg.gameObject.SetActive(false);
                     newOrRecycled.RankNumTxt.gameObject.SetActive(true);
-                    newOrRecycled.RankNumTxt.text = model.Ranking + "";
+                    newOrRecycled.RankNumTxt.text = model.Ranking.ToString();
                 }
             }
 
