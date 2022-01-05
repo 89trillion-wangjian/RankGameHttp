@@ -30,23 +30,11 @@ SpriteAtlas:
       enableTightPacking: 1
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: d5c5e3391513443efbd56f9630b2c049, type: 3}
-    - {fileID: 2800000, guid: 276af3fa06b2148019b444df746575d2, type: 3}
-    - {fileID: 2800000, guid: aa1a394f0cf4646ac912c7c34044e423, type: 3}
-    - {fileID: 2800000, guid: fe56464c4b77b4dd3863dfe987ab931c, type: 3}
-    - {fileID: 2800000, guid: d60ba5c88cdd54dbcbfb53032b73891d, type: 3}
-    - {fileID: 2800000, guid: 32c504e91c8a24c1b968861d60af3c39, type: 3}
-    - {fileID: 2800000, guid: d7aaec59ee00b408bbbd95e499f4da86, type: 3}
-    - {fileID: 2800000, guid: c65e0d38e15f945f5b2d3479349d5036, type: 3}
-    - {fileID: 2800000, guid: e86eb6da149f94ba8b64c2b0fa22e9ea, type: 3}
-    - {fileID: 2800000, guid: 2af071191dd0f47d08cb7817b8f279e0, type: 3}
-    - {fileID: 2800000, guid: 3315013926b3643228bddcc3b46f8a62, type: 3}
-    - {fileID: 2800000, guid: 8655a22b920614994b6633c951e84841, type: 3}
-    - {fileID: 2800000, guid: df23706e503ce40bbb94671cc4dd60df, type: 3}
-    - {fileID: 2800000, guid: df131f3c859754f1488f6a051faa8111, type: 3}
+    - {fileID: 102900000, guid: 709a0bc93fd494f90bb82c87bc1e5e7d, type: 3}
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 1b0131a57be5a48abb7cede88096ce89, type: 3}
   - {fileID: 21300000, guid: c65e0d38e15f945f5b2d3479349d5036, type: 3}
   - {fileID: 21300000, guid: d60ba5c88cdd54dbcbfb53032b73891d, type: 3}
   - {fileID: 21300000, guid: d5c5e3391513443efbd56f9630b2c049, type: 3}
@@ -56,8 +44,10 @@ SpriteAtlas:
   - {fileID: 21300000, guid: df131f3c859754f1488f6a051faa8111, type: 3}
   - {fileID: 21300000, guid: fe56464c4b77b4dd3863dfe987ab931c, type: 3}
   - {fileID: 21300000, guid: df23706e503ce40bbb94671cc4dd60df, type: 3}
+  - {fileID: 21300000, guid: 5c359caed8ef64074a5bf0d1893154a9, type: 3}
   - {fileID: 21300000, guid: aa1a394f0cf4646ac912c7c34044e423, type: 3}
   m_PackedSpriteNamesToIndex:
+  - pop up_3
   - panel_season results
   - btn_close
   - avatar_1
@@ -67,6 +57,7 @@ SpriteAtlas:
   - userHead
   - btn_blue_104
   - trophy
+  - pop up_1
   - bg_list_ranking
   m_Tag: rankAtlas
   m_IsVariant: 0
