@@ -2,20 +2,20 @@
 {
     public class JsonModel
     {
-        public string id;
+        public string Id;
 
-        public string nickName;
+        public string NickName;
 
-        public string avatar;
+        public string Avatar;
 
-        public string trophy;
+        public string Trophy;
 
         public JsonModel(string id, string nickName, string avatar, string trophy)
         {
-            this.id = id;
-            this.nickName = nickName;
-            this.avatar = avatar;
-            this.trophy = trophy;
+            this.Id = id;
+            this.NickName = nickName;
+            this.Avatar = avatar;
+            this.Trophy = trophy;
         }
     }
 }

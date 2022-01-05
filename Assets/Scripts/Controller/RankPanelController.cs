@@ -30,7 +30,7 @@ namespace Controller
             var json = RankModel.CreateInstance().JsonList;
             for (int i = 0; i < json.Count; i++)
             {
-                if (json[i].id == RankModel.CreateInstance().MySelfId)
+                if (json[i].Id == RankModel.CreateInstance().MySelfId)
                 {
                     FreshMyRankInfo(i < 3, json);
                     break;
@@ -57,7 +57,7 @@ namespace Controller
         /// <param name="value"></param>
         private void UpdateCountDownTxt(int value)
         {
-            this.rankView.ShowCutDown($"Ends in: {FormatTime(value)}");
+            rankView.ShowCutDown($"Ends in: {FormatTime(value)}");
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace Controller
 
         public void ClosePanel()
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

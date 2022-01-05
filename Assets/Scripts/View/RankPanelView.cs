@@ -17,11 +17,6 @@ namespace View
 
         [SerializeField] private Text countDownTxt;
 
-        public void ClosePanel()
-        {
-            Destroy(gameObject);
-        }
-
         /// <summary>
         /// 更新排名状态/图等
         /// </summary>
@@ -34,12 +29,12 @@ namespace View
             rankNumTxt.gameObject.SetActive(!isTopThree);
             if (isTopThree)
             {
-                rankimg.sprite =
-                    Resources.Load<Sprite>($"RankLevel/rank_{ranking + 1}");
+                rankimg.sprite
+                    = Resources.Load<Sprite>($"RankLevel/rank_{ranking + 1}");
                 if (rankimg.sprite != null)
                 {
-                    rankimg.rectTransform.sizeDelta =
-                        new Vector2(rankimg.sprite.rect.width, rankimg.sprite.rect.height);
+                    rankimg.rectTransform.sizeDelta
+                        = new Vector2(rankimg.sprite.rect.width, rankimg.sprite.rect.height);
                 }
             }
 
@@ -48,14 +43,14 @@ namespace View
                 rankNumTxt.text = $"{ranking + 1}";
             }
 
-            userName.text = json[ranking].nickName;
-            cupCountTxt.text = json[ranking].trophy;
+            userName.text = json[ranking].NickName;
+            cupCountTxt.text = json[ranking].Trophy;
         }
 
 
         public void ShowCutDown(string value)
         {
-            this.countDownTxt.text = value;
+            countDownTxt.text = value;
         }
     }
 }

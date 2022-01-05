@@ -48,7 +48,6 @@ namespace Model
 
         private void OnRequestSuccess(string data)
         {
-            Debug.Log("请求成功" + data);
             RankController.Singleton.ReadJsonData(data);
         }
 

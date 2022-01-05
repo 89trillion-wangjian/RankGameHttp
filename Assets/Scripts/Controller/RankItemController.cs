@@ -6,6 +6,7 @@ namespace Controller
     public class RankItemController : MonoBehaviour
     {
         [SerializeField] private RankItemView view;
+
         public static RankItemController Singleton;
 
         private MyListItemModel itemData;
@@ -17,12 +18,11 @@ namespace Controller
 
         public void SetData(MyListItemModel model)
         {
-            this.itemData = model;
+            itemData = model;
         }
 
         public void ShowToast()
         {
-            Debug.Log("排名" + itemData.Ranking);
             view.ShowUserInfo($"user: {itemData.NickName}   Rank: {itemData.Ranking}");
         }
     }

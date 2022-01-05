@@ -125,7 +125,7 @@ namespace View
                 }
             }
 
-            newOrRecycled.rankItemController.SetData(model);
+            newOrRecycled.RankItemController.SetData(model);
         }
 
         #endregion
@@ -175,10 +175,10 @@ namespace View
             {
                 var model = new MyListItemModel()
                 {
-                    ID = json[i].id,
-                    NickName = json[i].nickName,
-                    Avatar = json[i].avatar,
-                    Trophy = json[i].trophy,
+                    ID = json[i].Id,
+                    NickName = json[i].NickName,
+                    Avatar = json[i].Avatar,
+                    Trophy = json[i].Trophy,
                     Ranking = i + 1
                 };
                 newItems[i] = model;
@@ -209,9 +209,7 @@ namespace View
     // Your views holder should extend BaseItemViewsHolder for ListViews and CellViewsHolder for GridViews
     public class MyListItemViewsHolder : BaseItemViewsHolder
     {
-        public RankItemController rankItemController;
-
-        public GameObject gameObject;
+        public RankItemController RankItemController;
 
         public Image LevelImg;
 
@@ -237,8 +235,7 @@ namespace View
             root.GetComponentAtPath("ranking/rankNumTxt", out RankNumTxt);
             root.GetComponentAtPath("ranking/rankimg", out Rankimg);
             root.GetComponentAtPath("bg", out Bg);
-            rankItemController = root.GetComponent<RankItemController>();
-            gameObject = root.gameObject;
+            RankItemController = root.GetComponent<RankItemController>();
         }
     }
 }

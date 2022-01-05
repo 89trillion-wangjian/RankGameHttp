@@ -16,6 +16,8 @@ namespace Controller
 
         public static RankController Singleton;
 
+        private int countDownValue = 2048;
+
         public void Awake()
         {
             Singleton = this;
@@ -43,11 +45,10 @@ namespace Controller
                 );
                 list.Add(jsonModel);
             }
-
-            list.Sort((a, b) => Convert.ToInt32(b.trophy) - Convert.ToInt32(a.trophy));
+            list.Sort((a, b) => Convert.ToInt32(b.Trophy) - Convert.ToInt32(a.Trophy));
 
             RankModel.CreateInstance().JsonList = list;
-            RankModel.CreateInstance().CountDownValue = 2048;
+            RankModel.CreateInstance().CountDownValue = countDownValue;
             OpenRank();
         }
 
