@@ -1,9 +1,0 @@
-
-rcsharpsquid:S101–"URename class 'JSONBool' to match pascal case naming rules, consider using 'JsonBool'.(»€Øş
-wcsharpsquid:S101"URename class 'JSONNull' to match pascal case naming rules, consider using 'JsonNull'.(‘ªşıÿÿÿÿ
-tcsharpsquid:S101é"WRename class 'JSONArray' to match pascal case naming rules, consider using 'JsonArray'.(–ªÊ
-{csharpsquid:S101"YRename class 'JSONNumber' to match pascal case naming rules, consider using 'JsonNumber'.(û«»»øÿÿÿÿ
-…csharpsquid:S101¥"cRename class 'JSONLazyCreator' to match pascal case naming rules, consider using 'JsonLazyCreator'.(ñÆ‡–ûÿÿÿÿ
-{csharpsquid:S101„"YRename class 'JSONString' to match pascal case naming rules, consider using 'JsonString'.(¢—©¤ıÿÿÿÿ
-vcsharpsquid:S101ö"YRename class 'JSONObject' to match pascal case naming rules, consider using 'JsonObject'.(õöç’
-vcsharpsquid:S101/"URename class 'JSONNode' to match pascal case naming rules, consider using 'JsonNode'.(¨™–ñÿÿÿÿÿ

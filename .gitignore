@@ -2,18 +2,20 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/RankList/[Ll]ibrary/
-/RankList/[Tt]emp/
-/RankList/[Oo]bj/
-/RankList/[Bb]uild/
-/RankList/[Bb]uilds/
-/RankList/[Ll]ogs/
-/RankList/[Mm]emoryCaptures/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
 *.DS_Store
+
+/.idea
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
